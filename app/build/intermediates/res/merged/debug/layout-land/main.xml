@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#ffffffff">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="10sp"
+        android:layout_weight="1.13"
+        android:text=""
+        android:gravity="right|bottom"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:textColor="#000000" 
+        android:maxLength="20"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+         >
+
+        <Button
+            android:id="@+id/buttonMC"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_weight="0.66666"
+            android:text="@string/memoryclear"
+             android:onClick="clear" />
+
+        <Button
+            android:id="@+id/buttonMplus"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="@string/memoryp"
+            android:layout_weight="0.66666"
+             android:onClick="Memadd" />
+
+        <Button
+            android:id="@+id/buttonMmin"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="@string/memorym"
+            android:layout_weight="0.66666"
+             android:onClick="Memminus" />
+
+        <Button
+            android:id="@+id/buttonMR"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="@string/memoryrecall"
+            android:layout_weight="0.66666"
+            android:onClick="showValue" />
+
+        <Button
+            android:id="@+id/buttonErase"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="@string/Erase" 
+            android:onClick="eraseClicked"
+            android:layout_weight="0.66666"/>
+
+        <Button
+            android:id="@+id/buttonHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="@string/History"
+            android:layout_weight="0.66666"
+            android:onClick="goNext" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/buttonPercent"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:text="@string/percentage"
+            android:onClick="perClicked"
+            android:layout_weight="0.66666" />
+
+        <Button
+            android:id="@+id/buttonDiv"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:text="@string/division"
+            android:onClick="divClicked"
+            android:layout_weight="0.66666" />
+
+        <Button
+            android:id="@+id/buttonMul"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:text="@string/mul"
+            android:onClick="mulClicked"
+            android:layout_weight="0.66666" />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:text="@string/add"
+            android:onClick="plusClicked"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonMinus"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:text="@string/minus"
+            android:onClick="minusClicked"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/Button1"
+            android:layout_width="132sp"
+            android:layout_height="40sp"
+            android:text="@string/one"
+            android:onClick="oneClicked"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="132sp"
+            android:layout_height="40sp"
+            android:text="@string/two" 
+            android:onClick="twoClicked"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/Button3"
+            android:layout_width="132sp"
+            android:layout_height="40sp"
+            android:text="@string/three"
+            android:onClick="threeClicked"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/Button4"
+            android:layout_width="132sp"
+            android:layout_height="40sp"
+            android:text="@string/four" 
+            android:onClick="fourClicked"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/Button5"
+            android:layout_width="132sp"
+            android:layout_height="40sp"
+            android:text="@string/five" 
+            android:onClick="fiveClicked"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/Button6"
+            android:layout_width="132sp"
+            android:layout_height="40sp"
+            android:text="@string/six" 
+            android:onClick="sixClicked"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/Button7"
+            android:layout_width="132sp"
+            android:layout_height="40sp"
+            android:text="@string/seven"
+            android:onClick="sevenClicked"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/Button8"
+            android:layout_width="132sp"
+            android:layout_height="40sp"
+            android:text="@string/eight"
+            android:onClick="eightClicked"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40sp" 
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/Button9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nine" 
+            android:onClick="nineClicked"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/Button0"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:text="@string/zero"
+            android:onClick="zeroClicked"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonFp"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:text="@string/fp"
+            android:onClick="fpClicked"
+            android:layout_weight="0.66666" />
+
+        <Button
+            android:id="@+id/buttonEqual"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:text="@string/equal"
+            android:onClick="equalClicked"
+            android:layout_weight="0.66666" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:text="@string/Clear"
+            android:onClick="clearClicked"
+            android:layout_weight="0.66666" />
+
+    </LinearLayout>
+
+</LinearLayout>
